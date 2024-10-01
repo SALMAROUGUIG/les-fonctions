@@ -1,10 +1,16 @@
 #include <stdio.h>
-
-void multiplication(int m1,int m2){
-   int multp=m1*m2;
-   printf("La multiplication de %d avec %d est : %d",m1,m2,multp);
+int Multiplication(int a, int b) {
+    return a * b;
 }
 int main() {
-multiplication(6,376);
-    return 0;
+    int num1, num2, resultat;
+    
+  printf("first number:");
+  scanf("%d", &num1);
+  printf("seconed number:");
+  scanf("%d", &num2);
+  
+  resultat = Multiplication(num1, num2);
+  printf("totale de %d et %d: %d\n",num1, num2, resultat); 
+    
 }
