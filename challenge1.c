@@ -1,10 +1,17 @@
 #include <stdio.h>
-
-void somme(int first, int second){
-    int  sum=first+second;
-    printf("la somme de %d et %d est: %d",first,second,sum);
+#include <stdio.h>
+int somme(int a, int b) {
+	return a + b;
 }
 int main() {
-somme(6,4);
-    return 0;
+	int num1, num2, resultat;
+	
+  printf("first number:");
+  scanf("%d", &num1);
+  printf("seconed number:");
+  scanf("%d", &num2);
+  
+  resultat = somme(num1, num2);
+  printf("totale de %d et %d: %d\n",num1, num2, resultat); 
+	
 }
